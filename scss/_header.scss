@@ -87,33 +87,47 @@
             -ms-flex-pack: justify;
                 justify-content: space-between;
         .nav-item {
+            width: 1.5rem;
             font-size: .18rem;
             > a {
-                padding: 0 .3rem;
+                position: relative;
+                display: block;
+                width: 100%;
+                text-align: center;
                 color: $golden-color-light;
+                span:last-child {
+                    display: none;
+                }
+                &:after {
+                    content: "";
+                    display: block;
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    width: 1px;
+                    height: 100%;
+                    background-color: $golden-color-light;
+                    transform: rotate(15deg);
+                }
             }
-            &:after {
-                content: "";
-                display: inline-block;
-                width: 1px;
-                height: 100%;
-                background-color: $golden-color-light;
-                vertical-align: middle;
-                transform: rotate(15deg);
+            &:last-child {
+                a:after {
+                    display: none;
+                }
             }
-            &:last-child:after {
-                display: none;
-            }
-            &:first-child a{
+            
+            &:first-child > a{
                 padding-left: 0;
             }
-            &:last-child a{
+            &:last-child > a{
                 padding-right: 0;
             }
             &.hover {
                 > a {
                     font-weight: 700;
                     color: $golden-color;
+                    span:first-child { display: none;}
+                    span:last-child { display: block;}
                 }
             }
         } 
@@ -136,12 +150,13 @@
     .nav {
         .navbar {
             .nav-item {
-                a {
+                > a {
                     color: $dark-color;
+                    &:after {
+                        background-color: $dark-color;
+                    }
                 }
-                &:after {
-                    background-color: $dark-color;
-                }
+               
             }
         }
     }
@@ -181,6 +196,7 @@
             img {
                 width: 100%;
                 height: 100%;
+                transition: all .3s ease;
             }
             p {
                 position: absolute;
@@ -194,6 +210,12 @@
                 font-size: .24rem;
                 background-color: rgba(255,255,255,.7);
             }
+
+            &:hover {
+                img { transform: scale(1.1);}
+                p { color: $golden-color;}
+            }
+
         }
     }
 
@@ -216,13 +238,13 @@
             h2 {
                 color: #fff;
                 background-color: $main-color;
-                line-height: .62rem;
+                line-height: .52rem;
                 text-align: center;
-                font-size: .32rem;
+                font-size: .24rem;
                 font-weight: 400;
                 span{ 
                     margin-right: .08rem;
-                    font-size: .32rem;
+                    font-size: .24rem;
                 }
             }
             ul {
@@ -232,7 +254,10 @@
                 background-color: rgba(255,255,255,.6);
                 padding: 0 .23rem;
                 a {
-                    font-size: .24rem;
+                    display: block;
+                    width: 100%;
+                    line-height: 2;
+                    font-size: .18rem;
                     color: $main-color;
                 }
             }
@@ -251,8 +276,10 @@
                 font-size: .22rem;
                 margin-bottom: .4rem;
                 line-height: .45rem;
+                
                 a {
                     color: $main-color !important;
+                    transition: all .3s ease;
                 }
                 span {
                     display: inline-block;
@@ -264,6 +291,11 @@
                     text-align: center;
                     font-size: .22rem;
                     margin-right: .25rem;
+                    transition: all .3s ease;
+                }
+                &:hover {
+                    a{ color: $golden-color !important;}
+                    span { background-color: $golden-color;}
                 }
             }
         }
@@ -282,7 +314,7 @@
             margin-right: .63rem;
             img {
                width: 4.31rem;
-               height: 3.16rem; 
+               height: 3.16rem;
             }
         }
         .news-menu-list {
@@ -298,7 +330,10 @@
                     img {
                         width: 100%;
                         height: 100%;
+                        filter: grayscale(100%);
+                        filter: gray;
                     }
+                    
                     span {
                         position: absolute;
                         top: 50%;
@@ -328,6 +363,12 @@
                     > div span , p a{
                         color: $white-color;
                         background-color: $main-color;
+                    }
+                    > div {
+                        img {
+                            filter: grayscale(0);
+                            filter: none;
+                        }
                     }
                 }
             }
@@ -363,11 +404,9 @@
                 span {
                     background-color: $golden-color;
                 }
+                p { color: $golden-color; font-weight: 600;}
             }
         }
     }
-
-
-
 }
 

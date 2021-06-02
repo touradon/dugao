@@ -77,10 +77,16 @@
                 <nav class="nav" id="nav">
                     <ul class="navbar flex">
                         <li class="nav-item">
-                            <a href="index.html">首页</a>
+                            <a href="index.html">
+                                <span>首页</span>
+                                <span>Home</span>
+                            </a>
                         </li>
                         <li class="nav-item">
-                            <a href="vrshow.html">全景展示</a>
+                            <a href="vrshow.html">
+                                <span>全景展示</span>
+                                <span>Video Mapping</span>
+                            </a>
                             <!-- sub menu -->
                             <div class="submenu">
                                 <div class="submenu-in">
@@ -115,7 +121,10 @@
                             <!-- sub menu end -->
                         </li>
                         <li class="nav-item">
-                            <a href="project.html">成功案例</a>
+                            <a href="project.html">
+                                <span>成功案例</span>
+                                <span>Project Cases</span>
+                            </a>
                             <!-- sub menu -->
                             <div class="submenu">
                                 <div class="submenu-in">
@@ -150,7 +159,10 @@
                             <!-- sub menu end -->
                         </li>
                         <li class="nav-item">
-                            <a href="product.html">产品中心</a>
+                            <a href="product.html">
+                                <span>产品中心</span>
+                                <span>Products</span>
+                            </a>
                             <!-- sub menu -->
                             <div class="submenu">
                                 <div class="submenu-in">
@@ -171,7 +183,10 @@
                             <!-- sub menu end -->
                         </li>
                         <li class="nav-item">
-                            <a href="news.html">新闻中心</a>
+                            <a href="news.html">
+                                <span>新闻中心</span>
+                                <span>News</span>
+                            </a>
                             <!-- sub menu -->
                             <div class="submenu">
                                 <div class="submenu-in">
@@ -214,7 +229,10 @@
                             <!-- sub menu end -->
                         </li>
                         <li class="nav-item">
-                            <a href="about.html">关于我们</a>
+                            <a href="about.html">
+                                <span>关于我们</span>
+                                <span>About Us</span>
+                            </a>
                             <!-- sub menu -->
                             <div class="submenu">
                                 <div class="submenu-in">
@@ -261,7 +279,10 @@
                             <!-- sub menu end -->
                         </li>
                         <li class="nav-item">
-                            <a href="contact.html">联系我们</a>
+                            <a href="contact.html">
+                                <span>联系我们</span>
+                                <span>Contact Us</span>
+                            </a>
                         </li>
                     </ul>
                 </nav>
@@ -318,23 +339,23 @@
                 <div class="row">
                     <ul class="data-list flex">
                         <li>
-                            <h4>10</h4>
+                            <h4 data-to="10" class="number">10</h4>
                             <p>10年高端酒店家具生产经验</p>
                         </li>
                         <li>
-                            <h4>38</h4>
+                            <h4 data-to="38" class="number">38</h4>
                             <p>38+政府单位的认可</p>
                         </li>
                         <li>
-                            <h4>58</h4>
+                            <h4 data-to="58" class="number">58</h4>
                             <p>58+上市公司的选择</p>
                         </li>
                         <li>
-                            <h4>100</h4>
+                            <h4 data-to="100" class="number">100</h4>
                             <p>100+品牌客户的选择</p>
                         </li>
                         <li>
-                            <h4>1000</h4>
+                            <h4 data-to="1000" class="number">1000</h4>
                             <p>10000+行业客户的青睐</p>
                         </li>
                     </ul>
@@ -862,11 +883,24 @@
     </div>
 
 
-
-
-
     <script src="js/jquery.min.js"></script>
     <script src="js/swiper.min.js"></script>
     <script src="js/main.js"></script>
+    <script>
+        //数字递加
+        (function(){
+            var Mark = 0;
+            $(window).scroll(function(){
+                if(Mark == 0 && $(window).scrollTop() > ($('.data-list').offset().top + 118 - $(window).height())){
+                    $('.data-list .number').each(count);
+                    Mark++
+                }
+            });
+            if(Mark == 0 && $(window).scrollTop() > ($('.data-list').offset().top + 118 - $(window).height())){
+                $('.data-list .number').each(count);
+                Mark++
+            }	
+        })();
+    </script>
 </body>
 </html>

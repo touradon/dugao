@@ -251,11 +251,11 @@
 .news-list .news-wrap { margin-bottom: 1rem; }
 
 /* 联系我们 */
-.contact-banner { background: url(../images/contact-bg.jpg) no-repeat center; background-size: cover; }
+.contact-banner { background: url(../images/contact-bg.jpg) no-repeat center; background-size: cover; height: calc( 100vh - 240px); }
 
-.contact-banner .col-title { font-size: .9rem; }
+.contact-banner .col-title { font-size: .5rem; }
 
-.contact-banner .col-en { padding: .1rem; font-size: .80rem; line-height: 1; margin-bottom: .1rem; background-color: rgba(0, 0, 0, 0.5); text-transform: uppercase; font-family: Arial, Helvetica, sans-serif; }
+.contact-banner .col-en { padding: .1rem; font-size: .4rem; line-height: 1; margin-bottom: .1rem; background-color: rgba(0, 0, 0, 0.5); text-transform: uppercase; font-family: Arial, Helvetica, sans-serif; }
 
 .contact-banner .col-desc { font-size: .24rem; text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); background-color: rgba(0, 0, 0, 0); }
 
@@ -342,25 +342,25 @@
 
 .advantage .ad-list .ad-item { width: 25%; color: #ffffff; text-align: center; margin-bottom: .3rem; }
 
-.advantage .ad-list .ad-item span { display: block; width: 2.18rem; height: 2.18rem; margin: 0 auto .32rem; border: 3px solid #E8CFB7; border-radius: 50%; background: url(../images/about-adva.png) no-repeat; background-size: auto 2rem; }
+.advantage .ad-list .ad-item span { display: block; width: 2.18rem; height: 2.18rem; margin: 0 auto .32rem; border: 3px solid #E8CFB7; border-radius: 50%; background: url(../images/about-adva.png) no-repeat; background-size: auto 1.8rem; }
 
 .advantage .ad-list .ad-item p { font-size: 24px; }
 
-.advantage .ad-list .ad-item:nth-child(1) span { background-position: 0 0; }
+.advantage .ad-list .ad-item:nth-child(1) span { background-position: .2rem center; }
 
-.advantage .ad-list .ad-item:nth-child(2) span { background-position: -2rem 0; }
+.advantage .ad-list .ad-item:nth-child(2) span { background-position: -1.65rem center; }
 
-.advantage .ad-list .ad-item:nth-child(3) span { background-position: -4rem 0; }
+.advantage .ad-list .ad-item:nth-child(3) span { background-position: -3.5rem center; }
 
-.advantage .ad-list .ad-item:nth-child(4) span { background-position: -6rem 0; }
+.advantage .ad-list .ad-item:nth-child(4) span { background-position: -5.2rem center; }
 
-.advantage .ad-list .ad-item:nth-child(5) span { background-position: -8rem 0; }
+.advantage .ad-list .ad-item:nth-child(5) span { background-position: -7rem center; }
 
-.advantage .ad-list .ad-item:nth-child(6) span { background-position: -10rem 0; }
+.advantage .ad-list .ad-item:nth-child(6) span { background-position: -8.9rem center; }
 
-.advantage .ad-list .ad-item:nth-child(7) span { background-position: -12rem 0; }
+.advantage .ad-list .ad-item:nth-child(7) span { background-position: -10.6rem center; }
 
-.advantage .ad-list .ad-item:nth-child(8) span { background-position: -14rem 0; }
+.advantage .ad-list .ad-item:nth-child(8) span { background-position: -12.5rem center; }
 
 /* 合作伙伴 */
 .partners { padding: 1.3rem 0 1.1rem; }

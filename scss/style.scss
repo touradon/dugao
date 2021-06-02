@@ -659,12 +659,13 @@
 .contact-banner {
     background: url(../images/contact-bg.jpg) no-repeat center;
     background-size: cover;
+    height: calc( 100vh - 240px );
     .col-title {
-        font-size: .9rem;
+        font-size: .5rem;
     }
     .col-en {
         padding: .1rem;
-        font-size: .80rem;
+        font-size: .4rem;
         line-height: 1;
         margin-bottom: .1rem;
         background-color: rgba(0,0,0,0.5);
@@ -900,17 +901,17 @@
                 border: 3px solid $golden-color-light;
                 border-radius: 50%;
                 background: url(../images/about-adva.png) no-repeat;
-                background-size: auto 2rem;
+                background-size: auto 1.8rem;
             }
             p { font-size: 24px;}
-            &:nth-child(1) span{ background-position: 0 0;}
-            &:nth-child(2) span{ background-position: -2rem 0;}
-            &:nth-child(3) span{ background-position: -4rem 0;}
-            &:nth-child(4) span{ background-position: -6rem 0;}
-            &:nth-child(5) span{ background-position: -8rem 0;}
-            &:nth-child(6) span{ background-position: -10rem 0;}
-            &:nth-child(7) span{ background-position: -12rem 0;}
-            &:nth-child(8) span{ background-position: -14rem 0;}
+            &:nth-child(1) span{ background-position: .2rem center;}
+            &:nth-child(2) span{ background-position: -1.65rem center;}
+            &:nth-child(3) span{ background-position: -3.5rem center;}
+            &:nth-child(4) span{ background-position: -5.2rem center;}
+            &:nth-child(5) span{ background-position: -7rem center;}
+            &:nth-child(6) span{ background-position: -8.9rem center;}
+            &:nth-child(7) span{ background-position: -10.6rem center;}
+            &:nth-child(8) span{ background-position: -12.5rem center;}
         }
     }
 }
