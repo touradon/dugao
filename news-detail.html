@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width,user-scalable=no, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>新闻中心详情页</title>
+    <!--[if lt IE 9]>
+        <script src="http://apps.bdimg.com/libs/html5shiv/3.7/html5shiv.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <!-- 浏览器兼容提示 -->
+    <!-- <div id="browser-modal">
+        <div class="browser-modal-cover">
+        </div>
+        <div class="browser-content">
+            <div class="browser-text">
+                <div class="browser-dpc-logo">
+                    <img src="images/logo1.png" alt="度高酒店家具">
+                </div>
+                <h3 class="browser-text-title">请升级浏览器版本</h3>
+                <p class="browser-text-desc">
+                    抱歉，我们不再支持您的浏览器。请升级您的Internet Explorer（IE）浏览器到最新版本( IE 10以上版本)，或将搜狗、360、QQ 等浏览器切换到急速模式，您还可以下载安装谷歌、火狐浏览器以达到最佳观看模式。
+                </p>
+            </div>
+            <div class="browser-list">
+                <div class="browser-item browser-chrome">
+                    <a href="https://www.google.cn/intl/zh-CN/chrome/" target="_blank">
+                        <div class="iconfont"><img src="images/icon-chrome.png" alt=""></div>
+                        <h4>Chrome</h4>
+                    </a>
+                </div>
+                <div class="browser-item browser-firefox">
+                    <a href="http://www.firefox.com.cn/" target="_blank">
+                        <div class="iconfont"><img src="images/icon-firefox.png" alt=""></div>
+                        <h4>Firefox</h4>
+                    </a>
+                </div>
+                <div class="browser-item browser-safari">
+                    <a href="https://www.apple.com.cn/safari/" target="_blank">
+                        <div class="iconfont"><img src="images/icon-safari.png" alt=""></div>
+                        <h4>Safari</h4>
+                    </a>
+                </div>
+                <div class="browser-item browser-edge">
+                    <a href="https://www.microsoft.com/zh-cn/edge" target="_blank">
+                        <div class="iconfont"><img src="images/icon-edge.png" alt=""></div>
+                        <h4>Edge</h4>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- <div id="scroll2Top">返回顶部</div> -->
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="row flex">
+                <h1 class="logo">
+                    <a class="flex" href="/">
+                        <img src="images/logo-light.png" alt="">
+                        <div class="logo-desc flex">
+                            <span class="logo-year">10年</span>
+                            <span class="logo-text">坚持匠心，专注家具精品</span>
+                        </div>
+                    </a>
+                </h1>
+                <nav class="nav" id="nav">
+                    <ul class="navbar flex">
+                        <li class="nav-item">
+                            <a href="index.html">首页</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="vrshow.html">全景展示</a>
+                            <!-- sub menu -->
+                            <div class="submenu">
+                                <div class="submenu-in">
+                                    <ul class="case-menu flex">
+                                        <li>
+                                            <a href="">
+                                                <img src="images/case-nav-1.png" alt="">
+                                                <p>度高工厂全景</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <img src="images/case-nav-2.png" alt="">
+                                                <p>度高展厅全景</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <img src="images/case-nav-3.png" alt="">
+                                                <p>国内项目全景</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <img src="images/case-nav-4.png" alt="">
+                                                <p>国外项目全景</p>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- sub menu end -->
+                        </li>
+                        <li class="nav-item">
+                            <a href="project.html">成功案例</a>
+                            <!-- sub menu -->
+                            <div class="submenu">
+                                <div class="submenu-in">
+                                    <div class="project-menu flex">
+                                        <div class="proj-menu-img">
+                                            <img src="images/project-nav.png" alt="">
+                                        </div>
+                                        <div class="proj-menu-list">
+                                            <h2><span class="iconfont icon-pinpai"></span>品牌分类</h2>
+                                            <ul>
+                                                <li><a href="">雅高酒店集团</a></li>
+                                                <li><a href="">万豪酒店集团</a></li>
+                                                <li><a href="">洲际酒店集团</a></li>
+                                                <li><a href="">希尔顿集团</a></li>
+                                                <li><a href="">温德姆集团</a></li>
+                                                <li><a href="">温德姆集团</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="proj-menu-list">
+                                            <h2><span class="iconfont icon-dizhi1"></span>城市分类</h2>
+                                            <ul>
+                                                <li><a href="">华东地区</a></li>
+                                                <li><a href="">华南地区</a></li>
+                                                <li><a href="">华北地区</a></li>
+                                                <li><a href="">华中地区</a></li>
+                                                <li><a href="">西南地区</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- sub menu end -->
+                        </li>
+                        <li class="nav-item">
+                            <a href="product.html">产品中心</a>
+                            <!-- sub menu -->
+                            <div class="submenu">
+                                <div class="submenu-in">
+                                    <div class="product-menu flex">
+                                        <ul class="prod-menu-list flex">
+                                            <li><a href=""><span class="iconfont icon-datangba"></span> 酒店大堂家具</a></li>
+                                            <li><a href=""><span class="iconfont icon-huiyikaihuitaolun"></span> 酒店会议家具</a></li>
+                                            <li><a href=""><span class="iconfont icon-kefang"></span> 酒店客房家具</a></li>
+                                            <li><a href=""><span class="iconfont icon-sirendingzhi"></span>私人定制家具</a></li>
+                                            <li><a href=""><span class="iconfont icon-canting"></span> 酒店餐厅家具</a></li>
+                                        </ul>
+                                        <div class="prod-menu-img">
+                                            <img src="images/product-nav.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- sub menu end -->
+                        </li>
+                        <li class="nav-item">
+                            <a href="news.html">新闻中心</a>
+                            <!-- sub menu -->
+                            <div class="submenu">
+                                <div class="submenu-in">
+                                    <div class="news-menu flex">
+                                        <div class="news-menu-img">
+                                            <img src="images/news-nav-1.png" alt="">
+                                        </div>
+                                        <ul class="news-menu-list flex">
+                                            <li>
+                                                <div>
+                                                    <a href="">
+                                                        <img src="images/news-nav-2.png" alt="">
+                                                        <span class="iconfont icon-xinwen"></span>
+                                                    </a>
+                                                </div>
+                                                <p><a href="">公司新闻</a></p>
+                                            </li>
+                                            <li>
+                                                <div>
+                                                   <a href="">
+                                                        <img src="images/news-nav-3.png" alt="">
+                                                        <span class="iconfont icon-news"></span>
+                                                   </a>
+                                                </div>
+                                                <p><a href="">行业新闻</a></p>
+                                            </li>
+                                            <li>
+                                                <div>
+                                                    <a href="">
+                                                        <img src="images/news-nav-4.png" alt="">
+                                                        <span class="iconfont icon-ketangweixuanzhong"></span>
+                                                    </a>
+                                                </div>
+                                                <p><a href="">家居小课堂</a></p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- sub menu end -->
+                        </li>
+                        <li class="nav-item">
+                            <a href="about.html">关于我们</a>
+                            <!-- sub menu -->
+                            <div class="submenu">
+                                <div class="submenu-in">
+                                    <ul class="about-menu flex">
+                                       <li>
+                                           <a href="">
+                                                <span class="iconfont icon-icon-test"></span>
+                                                <p>公司介绍</p>
+                                           </a>
+                                       </li>
+                                       <li>
+                                           <a href="">
+                                                <span class="iconfont icon-youshi"></span>
+                                                <p>我们的优势</p>
+                                           </a>
+                                       </li>
+                                       <li>
+                                           <a href="">
+                                                <span class="iconfont icon-hezuohuoban"></span>
+                                                <p>合作伙伴</p>
+                                           </a>
+                                       </li>
+                                       <li>
+                                           <a href="">
+                                                <span class="iconfont icon-gongsituandui"></span>
+                                                <p>公司团队</p>
+                                           </a>
+                                       </li>
+                                       <li>
+                                           <a href="">
+                                                <span class="iconfont icon-licheng"></span>
+                                                <p>发展历程</p>
+                                           </a>
+                                        </li> 
+                                       <li>
+                                           <a href="">
+                                                <span class="iconfont icon-rongyujinpai"></span>
+                                                <p>荣誉资质</p>
+                                           </a>
+                                       </li> 
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- sub menu end -->
+                        </li>
+                        <li class="nav-item">
+                            <a href="contact.html">联系我们</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="tel">
+                    <h2>全球招商热线</h2>
+                    <p>+86-757-88869696</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    
+     <!-- detail banner -->
+     <div class="detail-banner">
+        <div class="container">
+            <h3 class="col-title">新闻中心</h3>
+            <p class="col-en">NEWS CENTER</p>
+        </div>
+    </div>
+
+    <div class="main">
+        <!-- 工程案例详情 -->
+        <section class="detail">
+            <div class="container">
+                <div class="row">
+                    <div class="page-head flex">
+                        <h3 class="berad-title">新闻中心</h3>
+                       <div class="breadcrumb">
+                           您当前位置：<a href="">首页</a><a href="">新闻中心</a><a href="">公司新闻</a>
+                       </div>
+                    </div>
+
+                    <!-- 内容区域 -->
+                    <div class="detail-wrap">
+                        <div class="article">
+                            <div class="article-title">
+                                <h2 class="title">从数字社区到数字城市，朗新科技与福州城投用合作展现数字化的价值</h2>
+                                <p>
+                                    <span><i class="iconfont icon-shijian"></i>2021-05-28</span>
+                                    <span><i class="iconfont icon-ren"></i>朗新科技</span>
+                                </p>
+                            </div>
+                            <div class="detail-content">
+                                当前，中国农业现代化的发展步伐越迈越大，各种新模式、新生态不断涌现，经过长时间实践探索，数字化技术助力“三农”的效果已被全社会普遍认知。2021年，我国成功从脱贫攻坚向乡村振兴目标迈进，而在此过程中，数字化仍在持续发挥着巨大作用。
+    5月13日，朗新科技集团（300682.SZ）旗下瀚云科技为无锡新吴区打造的首个智慧农业云平台正式启用，系统以“1个中心+9个应用”为顶层设计，汇聚农田、农机、渔政监管，农资经销，农产品追溯等业务领域数据，形成“大农业”数据中心。
+    
+    一直以来，农业生产端垂直应用“散”“乱”现象严重，缺乏统一平台，更缺乏与政务平台数据互联互通的通道，难以挖掘农业大数据的深层次价值。朗新瀚云打造的智慧农业云平台是无锡首个投用的集农业生产、产业服务、综合管理于一体的区域级智慧农业云平台，对于企业方，智慧农业云平台能依据不同农业生态属性，进行部署匹配，满足农业生产、管理、经营需要；对于政府管理部门来讲，该平台以城市农业生产智慧化为基础，具备环境监测、设备控制、监管分析、农产品溯源等功能。通过实时监管和大数据分析，智慧农业云平台不仅为农业产业生态发展、产业融合提供强大助力，还为政策制定提供数据支撑。
+    
+    数字农业是农业信息化发展的高级阶段，是未来农业发展的必然方向。据权威机构统计，2013年，我国智慧农业产业规模达4000亿元，仅以应用(硬件和网络平台以及服务)为基础的智慧农业市场就有望在2022年达到184.5亿美元，年均复合增长率13.8%。近些年，国家也出台了“数字乡村”战略、数字农业农村发展规划等一系列重大政策和措施，为农业发展提供完善、宽松的政策环境和产业生态。
+    
+    朗新科技持续打造数字化的平台利器，助力农业生产数字化升级，以“1”个智慧农业云为核心，打造涵盖农业智慧生产、管理、配套服务等“N”类服务的产品体系。公司与俄罗斯知名农资企业达成“中俄智慧农业云”项目合作；中标农业农村部“全国农村集体资产监督管理平台”；与重庆江津区合作打造“花椒大数据平台”；打造无锡首个5G数字农业项目-鸿山葡萄园等众多农业示范项目，为农业现代化发展提供有力的技术支撑。
+    
+    “三农”作为民生基本面，是社会稳定发展的重要基础，也是数字中国的重要一环。朗新科技将持续为农业农村现代化、智能化发展注入数字力量，让农户从“会”种地到“慧”种地，让美丽乡村插上“数字翅膀”，大步迈向乡村振兴。
+                            </div>
+    
+                            <div class="article-other">
+                                <a href=""><strong>上一篇:</strong>“全国一网通”汽车充电不再难 | “新电途”与星星充电联手发力能源数字化</a>
+                                <a href=""><strong>下一篇:</strong>朗新邦道助力成都城市交通数字化升级</a>
+                            </div>
+    
+                        </div>
+                        <div class="aside">
+                            <div class="hot">
+                                <h2 class="hot-title">相关新闻</h2>
+                                <ul class="hot-list">
+                                    <li><a href="">360全景拍摄技术电影是机遇也是挑战</a></li>
+                                    <li><a href="">360全景拍摄技术电影是机遇也是挑战</a></li>
+                                    <li><a href="">360全景拍摄技术电影是机遇也是挑战</a></li>
+                                    <li><a href="">360全景拍摄技术电影是机遇也是挑战</a></li>
+                                    <li><a href="">360全景拍摄技术电影是机遇也是挑战</a></li>
+                                    <li><a href="">360全景拍摄技术电影是机遇也是挑战</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- 页脚 -->
+        <section class="section8 footer">
+            <div class="container">
+                <div class="row">
+                    <div class="ft-in">
+                        <div class="ft-logo">
+                            <img src="images/logo-light.png" alt="">
+                        </div>
+                        <div class="ft-links">
+                            <dl class="ft-item">
+                                <dt>关于我们</dt>
+                                <dd><a href="">度高简介</a></dd>
+                                <dd><a href="">企业文化</a></dd>
+                                <dd><a href="">发展历程</a></dd>
+                                <dd><a href="">荣誉资质</a></dd>
+                            </dl>
+                            <dl class="ft-item">
+                                <dt>工程案例</dt>
+                                <dd><a href="">国内酒店项目</a></dd>
+                                <dd><a href="">国际酒店项目</a></dd>
+                                <dd><a href="">精装豪宅项目</a></dd>
+                            </dl>
+                            <dl class="ft-item">
+                                <dt>新闻资讯</dt>
+                                <dd><a href="">最新动态</a></dd>
+                                <dd><a href="">新闻中心</a></dd>
+                            </dl>
+                            <dl class="ft-item">
+                                <dt>国际展厅</dt>
+                                <dd><a href="">乐从国际展厅</a></dd>
+                            </dl>
+                        </div>
+    
+                        <div class="ft-ewm">
+                            <img src="images/qrcode.png" alt="">
+                            <p>【关注度高】</p>
+                        </div>
+                    </div>
+                    <div class="ft-tel">合作电话：0757-88869696  </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+
+    
+    <script src="js/jquery.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

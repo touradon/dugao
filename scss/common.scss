@@ -1,0 +1,164 @@
+@charset "utf-8";
+@import "_varibles";
+@import "_base.scss";
+@import "_font";
+/* 清除浮动 */
+.clearfix {
+  @include clearfix;
+}
+
+/* 弹性布局 */
+.flex {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+/* 容器 */
+.container {
+    max-width: 1510px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* 全屏容器 */
+.container-fluid {
+    width: 100%;
+}
+/* */
+.row {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+/* 间距 */
+.mb40 {
+    margin-bottom: 40px;
+}
+/* 模块标题 */
+@import "_title";
+/* 切换 */
+@import "_tabbar";
+/* 导航 */
+@import "_header.scss";
+/* 页脚 */
+@import "_footer";
+/* 图片列表 */
+@import "_imglist";
+/* 分页 */
+@import "_pagination";
+/* 弹层 */
+@import "_modal";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 浏览器兼容性 */
+#browser-modal {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    text-align: center;
+    color: #303233;
+    position: fixed;
+    z-index: 9999;
+    display: none;
+    .browser-modal-cover {
+        position: fixed;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        background-color: #111;
+        opacity: .9;
+        z-index: -1;
+    }
+    .browser-content {
+        width: 50%;
+        margin-top: 10%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 50px;
+        padding-top: 30px;
+        background-color: #fff;
+        border-radius: 5px;
+        .browser-dpc-logo img {
+            height: 62px;
+            margin: 45px auto 30px;
+        }
+        .browser-text-title {
+            text-transform: uppercase;
+            font-size: 24px;
+        }
+        .browser-text-desc {
+            padding: 30px 30px 40px;
+            font-size: 14px;
+        }
+        .browser-list {
+            width: 100%;
+            margin: 40px auto;
+            height: 130px;
+            text-align: center;
+        }
+        .browser-item {
+            display: inline-block;
+            width: 150px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            margin-left: auto;
+            margin-right: auto;
+            a {
+                color: #921041;
+                cursor: pointer;
+                display: block;
+                img {
+                    display: block;
+                    margin: 0 auto;
+                    max-width: 50px;
+                    width: 50px;
+                    height: 50px;
+                    border: none;
+                }
+                h4 {
+                    text-align: center;
+                    margin-top: 20px;
+                    font-size: 18px;
+                    font-weight: 700;
+                }
+                .iconfont {
+                    width: 50px;
+                    height: 50px;
+                    margin: 0 auto;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
