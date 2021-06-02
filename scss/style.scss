@@ -207,12 +207,12 @@
             height: 100%;
         }
         .case-img {
-            width: 4.8rem;
+            width: 100%;
             height: 3.84rem;
             position: relative;
             img {
                 width: 100%;
-                height: 100%;
+                height: 3.84rem;
             }
             .case-desc {
                 display: flex;
@@ -223,12 +223,21 @@
                 top: 50%;
                 left: 50%;
                 width: 100%;
-                height: 100%;
+                height: 3.84rem;
                 transform: translate(-50%, -50%);
                 background-color: rgba(0,0,0,0.7);
                 color: #fff;
                 font-size: .16rem;
                 visibility: hidden;
+                opacity: 0;
+                transition: all .3s ease-in-out;
+                .case-star {
+                    margin-bottom: .1rem;
+                }
+                .case-addr {
+                    color: #fff;
+                    padding: 5px 10px;
+                }
             }
         }
         .case-title {
@@ -239,7 +248,76 @@
             font-weight: normal;
             background-color: $white-color;
             @include ellipse;
+            transition: all .3s ease-in-out;
         }
+
+        &:hover {
+            .case-desc {
+                visibility: visible;
+                opacity: 1;
+            }
+        }
+        &:nth-child(1):hover {
+            .case-title, .case-addr { 
+                color: #fff;
+                background-color: $bg1;
+            }
+        }
+        &:nth-child(2):hover {
+            .case-title, .case-addr { 
+                color: #fff;
+                background-color: $bg2;
+            }
+        }
+        &:nth-child(3):hover {
+            .case-title, .case-addr { 
+                color: #fff;
+                background-color: $bg3;
+            }
+        }
+        &:nth-child(4):hover {
+            .case-title, .case-addr { 
+                color: #fff;
+                background-color: $bg4;
+            }
+        }
+        &:nth-child(5):hover {
+            .case-title, .case-addr { 
+                color: #fff;
+                background-color: $bg5;
+            }
+        }
+        &:nth-child(6):hover {
+            .case-title, .case-addr { 
+                color: #fff;
+                background-color: $bg6;
+            }
+        }
+        &:nth-child(7):hover {
+            .case-title, .case-addr { 
+                color: #fff;
+                background-color: $bg7;
+            }
+        }
+        &:nth-child(8):hover {
+            .case-title, .case-addr { 
+                color: #fff;
+                background-color: $bg8;
+            }
+        }
+        &:nth-child(9):hover {
+            .case-title, .case-addr { 
+                color: #fff;
+                background-color: $bg5;
+            }
+        }
+        &:nth-child(10):hover {
+            .case-title, .case-addr { 
+                color: #fff;
+                background-color: $bg6;
+            }
+        }
+
     }
 }
 

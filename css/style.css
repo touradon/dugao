@@ -78,13 +78,39 @@
 
 .case-list .case-item .in { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; width: 100%; height: 100%; }
 
-.case-list .case-item .case-img { width: 4.8rem; height: 3.84rem; position: relative; }
+.case-list .case-item .case-img { width: 100%; height: 3.84rem; position: relative; }
 
-.case-list .case-item .case-img img { width: 100%; height: 100%; }
+.case-list .case-item .case-img img { width: 100%; height: 3.84rem; }
 
-.case-list .case-item .case-img .case-desc { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; position: absolute; top: 50%; left: 50%; width: 100%; height: 100%; -webkit-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%); background-color: rgba(0, 0, 0, 0.7); color: #fff; font-size: .16rem; visibility: hidden; }
+.case-list .case-item .case-img .case-desc { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; position: absolute; top: 50%; left: 50%; width: 100%; height: 3.84rem; -webkit-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%); background-color: rgba(0, 0, 0, 0.7); color: #fff; font-size: .16rem; visibility: hidden; opacity: 0; -webkit-transition: all .3s ease-in-out; -o-transition: all .3s ease-in-out; transition: all .3s ease-in-out; }
 
-.case-list .case-item .case-title { padding: .2rem 0; font-size: .22rem; text-align: center; color: #333333; font-weight: normal; background-color: #ffffff; -o-text-overflow: ellipsis; text-overflow: ellipsis; white-space: nowrap; overflow: hidden; }
+.case-list .case-item .case-img .case-desc .case-star { margin-bottom: .1rem; }
+
+.case-list .case-item .case-img .case-desc .case-addr { color: #fff; padding: 5px 10px; }
+
+.case-list .case-item .case-title { padding: .2rem 0; font-size: .22rem; text-align: center; color: #333333; font-weight: normal; background-color: #ffffff; -o-text-overflow: ellipsis; text-overflow: ellipsis; white-space: nowrap; overflow: hidden; -webkit-transition: all .3s ease-in-out; -o-transition: all .3s ease-in-out; transition: all .3s ease-in-out; }
+
+.case-list .case-item:hover .case-desc { visibility: visible; opacity: 1; }
+
+.case-list .case-item:nth-child(1):hover .case-title, .case-list .case-item:nth-child(1):hover .case-addr { color: #fff; background-color: #7F6E54; }
+
+.case-list .case-item:nth-child(2):hover .case-title, .case-list .case-item:nth-child(2):hover .case-addr { color: #fff; background-color: #E9180E; }
+
+.case-list .case-item:nth-child(3):hover .case-title, .case-list .case-item:nth-child(3):hover .case-addr { color: #fff; background-color: #00413A; }
+
+.case-list .case-item:nth-child(4):hover .case-title, .case-list .case-item:nth-child(4):hover .case-addr { color: #fff; background-color: #FED3BC; }
+
+.case-list .case-item:nth-child(5):hover .case-title, .case-list .case-item:nth-child(5):hover .case-addr { color: #fff; background-color: #4D4D62; }
+
+.case-list .case-item:nth-child(6):hover .case-title, .case-list .case-item:nth-child(6):hover .case-addr { color: #fff; background-color: #008C95; }
+
+.case-list .case-item:nth-child(7):hover .case-title, .case-list .case-item:nth-child(7):hover .case-addr { color: #fff; background-color: #ECD2B9; }
+
+.case-list .case-item:nth-child(8):hover .case-title, .case-list .case-item:nth-child(8):hover .case-addr { color: #fff; background-color: #282828; }
+
+.case-list .case-item:nth-child(9):hover .case-title, .case-list .case-item:nth-child(9):hover .case-addr { color: #fff; background-color: #4D4D62; }
+
+.case-list .case-item:nth-child(10):hover .case-title, .case-list .case-item:nth-child(10):hover .case-addr { color: #fff; background-color: #008C95; }
 
 /* 合作伙伴 */
 .dg-partners .container { width: 13.5rem; }
